@@ -1,0 +1,58 @@
+
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ list-style: none;
+}
+
+:root{
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+    --nav-width: 250px;
+}
+
+
+body{
+font-family: "iranyekan";
+direction: rtl;
+}
+
+.main-layout{
+    display: flex;
+}
+
+.nav{
+   height: 100vh;
+   width: var(--nav-width);
+   background-color: #fff;
+   padding: .5rem; 
+   position: sticky;
+   top: 0;
+   right: 0;
+}
+
+.nav li{
+    margin: 5px 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: gray;
+    display: block;
+    padding: 8px;
+}
+
+.nav__link:hover{
+    background-color: #eef2f8;
+    color: #2c4982;
+    border-radius: 1.5rem;
+    transition: all 0.3s ease-out;
+    
+}
+#app{
+    height: 200vh;
+    padding: 1rem;
+    background-color: rgb(233, 228, 228)
+}
